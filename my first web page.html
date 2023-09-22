@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://127.0.0.1:5500/frontend/test.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>my first web page</title>
+    <!--<a href="https://www.w3schools.com">This is a link</!--<a>-->
+    <!--<img src="abc.png" alt="abc.png" width="104" height="142">
+    <img src="img_girl.jpg" alt="Girl with a jacket">
+    -->
+
+    </head><body style="background-color:aliceblue;">
+
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+    <style>
+
+    </style>
+
+
+
+    <h1 style="color:blue;">This is a heading</h1>
+    <h2 style="background-color:powderblue;">This is background color</h2>
+    <h3 style="font-family:verdana;">This is font family</h3>
+    <h4>My First Heading</h4>
+    <h5>My First Heading</h5>
+    <h6>My First Heading</h6>
+    <p style="text-align:center;">Centered paragraph.</p>
+    <p style="font-size:160%;">This is a paragraph.</p>
+    <b>This text is bold</b><br>
+    <strong>This text is important!</strong>
+    <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+    <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+
+
+    <table>
+        <tbody><tr>
+            <th>name</th>
+            <th>course</th>
+            <th>marks</th>
+            <th>grade</th>
+        </tr>
+        <tr>
+            <td>rubina</td>
+            <td>web</td>
+            <td>94</td>
+            <td>A</td>
+
+
+        </tr>
+        <tr>
+            <td>sakina</td>
+            <td>web</td>
+            <td>87</td>
+            <td>B</td>
+
+
+        </tr>
+        <tr>
+            <td>ammara</td>
+            <td>web</td>
+            <td>98</td>
+            <td>A</td>
+
+
+        </tr>
+        <tr>
+            <td>farzana</td>
+            <td>web</td>
+            <td>88</td>
+            <td>B</td>
+
+
+        </tr>
+        <tr>
+            <td>fatima</td>
+            <td>web</td>
+            <td>88</td>
+            <td>B</td>
+
+
+        </tr>
+
+    </tbody></table>
+
+
+
+
+    <br>
+
+<!-- Co--></body></html>
